@@ -1,0 +1,230 @@
+/*UTILS*/
+/*COLORES*/
+/*LETRAS*/
+/*MIXIN*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right top, #303030, #484848, #626262, #7e7c7d, #9a9898, #acaaaa, #bebcbc, #d0cece, #dbdada, #e7e6e7, #f3f3f3, #ffffff); }
+
+h1 {
+  color: black;
+  margin: 150px 0 0 20px;
+  font-size: 60px;
+  font-family: 'roboto';
+  font-weight: bold; }
+
+h2 {
+  color: black;
+  margin: 100px 0 50px 20px;
+  font-size: 45px;
+  font-family: 'roboto';
+  font-weight: bolder; }
+
+h3 {
+  font-family: 'roboto'; }
+
+h4 {
+  font-style: oblique;
+  color: white; }
+
+p {
+  color: black;
+  font-family: 'roboto';
+  font-weight: lighter; }
+
+/*PARTIALS*/
+.navbar {
+  padding: 10px; }
+  .navbar__logo {
+    border-radius: 100%;
+    width: 30%;
+    padding-left: 20px;
+    padding-top: 20px; }
+  .navbar__menu {
+    text-align: center;
+    padding-right: 20px; }
+    .navbar__menu__item {
+      padding-right: 40px; }
+
+.fin {
+  text-align: center;
+  padding: 50px 0 30px 0; }
+  .fin__redes {
+    padding: 15px; }
+
+/*PAGES*/
+.inicio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 30px 50px; }
+  .inicio__texto {
+    margin-top: 35px;
+    font-weight: lighter;
+    width: 60%;
+    text-align: justify;
+    font-size: 20px; }
+  .inicio__foto {
+    margin-top: 25px;
+    width: 300px;
+    height: 300px; }
+
+.medio {
+  padding-top: 100px; }
+  .medio__foto {
+    border-radius: 100%;
+    width: 50%; }
+  .medio__texto {
+    padding: 30px;
+    font-style: oblique; }
+
+@media only screen and (max-width: 1015px) {
+  .card {
+    width: 500px; } }
+
+@media only screen and (max-width: 780px) {
+  .card {
+    width: 280px; } }
+
+@media only screen and (max-width: 560px) {
+  .card {
+    width: 180px; } }
+
+.inventario {
+  display: grid;
+  grid-template-areas: "head  head" "menu menu" "main foot";
+  margin-left: 20px; }
+  .inventario__titulo {
+    padding-bottom: 100px;
+    grid-area: head; }
+  .inventario__texto {
+    padding-bottom: 50px;
+    font-size: 25px;
+    grid-area: menu; }
+  .inventario__lista {
+    grid-area: main;
+    font-size: 20px;
+    font-weight: bolder; }
+  .inventario__foto:hover {
+    grid-area: foot;
+    transform: scale(1.5, 1.5); }
+
+@media only screen and (max-width: 1024px) {
+  .inventario__foto {
+    width: 500px; } }
+
+@media only screen and (max-width: 780px) {
+  .inventario__foto {
+    width: 280px; } }
+
+@media only screen and (max-width: 560px) {
+  .inventario__foto {
+    width: 180px; } }
+
+.instrucciones {
+  display: grid;
+  margin-left: 20px; }
+  .instrucciones__titulo {
+    padding-bottom: 150px; }
+  .instrucciones__texto {
+    font-size: 25px; }
+  .instrucciones__video {
+    justify-self: center;
+    animation-duration: 8s;
+    animation-name: aparece; }
+
+@keyframes aparece {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .instrucciones__archivos {
+    display: block;
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; }
+
+@media only screen and (max-width: 1024px) {
+  .instrucciones {
+    width: 500px; } }
+
+@media only screen and (max-width: 780px) {
+  .instrucciones {
+    width: 280px; } }
+
+@media only screen and (max-width: 560px) {
+  .medicos__lista {
+    width: 180px; } }
+
+@media only screen and (max-width: 1024px) {
+  .instrucciones {
+    width: 500px; } }
+
+@media only screen and (max-width: 780px) {
+  .medicos__lista {
+    width: 280px; } }
+
+@media only screen and (max-width: 560px) {
+  .medicos__lista {
+    width: 180px; } }
+
+.presentacion {
+  padding: 20px; }
+  .presentacion__texto {
+    font-size: 25px; }
+
+.carousel {
+  padding: 7% 15%;
+  text-align: center; }
+  .carousel__cuerpo__fotos {
+    width: 350px;
+    height: 450px; }
+
+@media only screen and (max-width: 1024px) {
+  #carouselExampleControls {
+    width: 300px; }
+  .carousel__cuerpo__fotos {
+    width: 500px; } }
+
+@media only screen and (max-width: 780px) {
+  #carouselExampleControls {
+    width: 480px; }
+  .carousel__cuerpo__fotos {
+    width: 280px; } }
+
+@media only screen and (max-width: 560px) {
+  #carouselExampleControls {
+    width: 280px; }
+  .carousel__cuerpo__fotos {
+    width: 180px; } }
+
+.formulario {
+  margin-top: 40px; }
+  .formulario__contacto {
+    margin-top: 30px; }
+    .formulario__contacto__whatsapp {
+      padding-left: 30px; }
+    .formulario__contacto__direccion {
+      padding-left: 30px; }
+
+.tienda {
+  margin-left: 20px; }
+  .tienda__texto {
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 50px 0 30px 0; }
+
+.gondola {
+  padding-top: 100px; }
+  .gondola__foto {
+    border-radius: 100%;
+    width: 50%; }
+  .gondola__texto {
+    padding: 30px;
+    font-style: oblique; }
+
+/*COLORES*/
+/*LETRAS*/
+/*MIXIN*/

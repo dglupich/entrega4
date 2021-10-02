@@ -1,0 +1,54 @@
+
+
+.inicio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 30px 50px;
+
+    &__texto{
+        margin-top: 35px;
+        font-weight: lighter;
+        width: 60%;
+        text-align: justify;
+        font-size: $parrafo-m;
+    }
+
+    &__foto{
+        margin-top: 25px;
+        width: 300px;
+        height: 300px;
+    }
+}
+ .medio{
+     padding-top: 100px;
+     &__foto{
+         @include formato(100%, 50%)
+     }
+     &__texto{
+        @include parrafo(30px, oblique)
+     }
+ }
+
+@media only screen and (max-width: 1015px) {
+  
+    
+    .card{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+   
+        .card{
+        width: 280px;
+        }   
+}
+
+@media only screen and (max-width: 560px) {
+   
+  
+    .card{
+        width: 180px;
+    }
+}

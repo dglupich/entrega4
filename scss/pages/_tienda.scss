@@ -1,0 +1,25 @@
+
+
+.tienda{
+    margin-left: 20px;
+ 
+
+    &__texto{
+        font-size: $parrafo-l;
+        margin-left: 20px;
+        padding: 50px 0 30px 0;
+    }
+}
+
+.gondola{
+    padding-top:  100px;
+
+    &__foto{
+        @include formato (100%, 50%)
+      
+    }
+
+    &__texto{
+        @include parrafo(30px, oblique)
+    }
+}

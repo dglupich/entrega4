@@ -1,0 +1,17 @@
+/*UTILS*/
+@import "./utils/_variables";
+@import "./utils/globals";
+
+/*PARTIALS*/
+@import "./partials/navegador";
+@import "./partials/pie";
+
+/*PAGES*/
+@import "./pages/home";
+@import "./pages/cultivo";
+@import "./pages/reprocann";
+@import "./pages/galeria";
+@import "./pages/contacto";
+@import "./pages/tienda";
+@import "./pages/404";
+

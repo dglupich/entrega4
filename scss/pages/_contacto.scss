@@ -1,0 +1,17 @@
+
+
+.formulario{
+    margin-top: 40px;
+
+    &__contacto{
+        margin-top: 30px;
+
+        &__whatsapp{
+            padding-left: 30px;
+        }
+
+        &__direccion{
+            padding-left: 30px;
+        }
+    }
+}

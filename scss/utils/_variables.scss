@@ -1,0 +1,28 @@
+
+
+/*COLORES*/
+$fondo: rgb(39, 39, 39);
+
+
+/*LETRAS*/
+$parrafo-s: 15px;   
+$parrafo-m: 20px;
+$parrafo-l: 25px;
+
+/*MIXIN*/
+@mixin medida ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin formato ($borde, $diametro){
+    border-radius: $borde;
+    width: $diametro;
+}
+
+@mixin parrafo ($espacios, $letra) {
+    padding: $espacios;
+    font-style: $letra;
+    
+    
+}

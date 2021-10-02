@@ -1,0 +1,85 @@
+
+
+.instrucciones{
+    display: grid;
+    margin-left: 20px;
+
+    &__titulo{
+        padding-bottom: 150px;
+    }
+
+    &__texto{
+        font-size: $parrafo-l;
+    }
+    
+    &__video{
+        justify-self: center;
+        animation-duration: 8s;
+        animation-name: aparece;
+    }
+
+    @keyframes aparece{
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &__archivos{
+        display: block;
+        color: green;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+    
+    .instrucciones{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+   
+        .instrucciones{
+        width: 280px;
+        }   
+}
+
+@media only screen and (max-width: 560px) {
+   
+  
+    .medicos__lista{
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+    
+    .instrucciones{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+   
+        .medicos__lista{
+        width: 280px;
+        }   
+}
+
+@media only screen and (max-width: 560px) {
+   
+  
+    .medicos__lista{
+        width: 180px;
+    }
+}
