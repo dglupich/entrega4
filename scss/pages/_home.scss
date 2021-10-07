@@ -1,27 +1,36 @@
-
-
-.inicio{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px 30px 50px;
+.principal{
+    padding: 100px 0px 0px 30px;
 
     &__texto{
-        margin-top: 35px;
-        font-weight: lighter;
-        width: 60%;
-        text-align: justify;
-        font-size: $parrafo-m;
+        animation-duration: 5s;
+        animation-name: comienzaTexto;
+    }
+    @keyframes comienzaTexto{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     &__foto{
-        margin-top: 25px;
-        width: 300px;
-        height: 300px;
+        animation-duration: 15s;
+        animation-name: comienzaFoto;
+    }
+    @keyframes comienzaFoto{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
+   
+
  .medio{
-     padding-top: 100px;
+     padding-top: 200px;
      &__foto{
          @include formato(100%, 50%)
      }

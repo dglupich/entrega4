@@ -17,8 +17,8 @@
 <body>
     <!--NAVEGADOR-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">  <img class="navbar__logo" src="publico/logo.png" alt="logo pagina"> </a>
+        <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__slideInDown">
+            <a class="navbar-brand" href="index.html">  <img class="navbar__logo" src="" alt="logo pagina"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNav" aria-controls="barraNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,7 +27,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="navbar__menu__item navbar-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio    </a>
                     </li>
                     <li class="navbar__menu__item navbar-item">
                         <a class="nav-link" href="paginas/cultivo.html">Cultivo</a>
@@ -51,25 +51,27 @@
     </header>
    
        <!--PRIMERA PARTE-->
-    <main>
-        <h1 class="animate__animated animate__backInDown">COMO CULTIVAR EN INTERIORES SIN PROBLEMAS.</h1>
-            <div class="inicio">
-                <p class="inicio__texto">Aca podemos proveerte de todo lo que andes buscando y asesorarte desde el planeamiento de tu cultivo ya se en interior o exterior, useas tierra o sistema hidroponico, como en el periodo de vida con tecnicas para aumentar la produccion, y el posterior corte, secado y curado.
-                Tambien te ayudamos de forma gratuita con el REPROCANN </p>  
-                <img class="inicio__foto" src="publico/fotoMedico.jpg" alt="medico">
-            </div>                             
+    <main class="container-fluid">
+        <div class="principal d-flex align-items-center">
+            <div class="principal__texto col-lg-6">
+                <h1 class="animate__animated animate__slideInLeft">COMO CULTIVAR EN INTERIORES SIN PROBLEMAS.</h1>
+            </div>
+            <div class="col-lg-6">
+                <img class="principal__foto" src="./publico/planta.png" alt="beneficios">
+            </div>
+        </div>                            
     </main>
- 
+    
     
     <!--SEGUNDA PARTE-->
   
-    <div class="medio container-fluid d-flex flex-row justify-content-around">
+    <div class="medio container-fluid d-flex justify-content-around">
         
         <div class="row ">
             <div class="col-lg-4">
                 <div class="card text-center bg-transparent  border-0">
                     <div class="card-body">
-                        <img class="medio__foto card-img-top" src="./publico/imagenCajaCultivo.jpg" alt="plantas">
+                        <img class="medio__foto card-img-top animate__animated animate__flipInX" src="./publico/imagenCajaCultivo.jpg" alt="plantas">
                         <p class="medio__texto  card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quaerat sint, accusamus, eaque quod perferendis qui odio placeat pariatur officia consequatur aliquam provident fugiat consectetur corrupti delectus similique, aliquid sunt?.</p>
                         <a class="btn  btn-lg btn-block btn-dark" href="paginas/cultivo.html" role="button">Cultivo</a>
                     </div>
@@ -79,7 +81,7 @@
             <div class=" col-lg-4">
                 <div class="card text-center bg-transparent border-0">
                     <div class="card-body">
-                        <img class="medio__foto card-img-top" src="./publico/imagenCajaReprocann.jpg" alt="legal">
+                        <img class="medio__foto card-img-top animate__animated animate__flipInX" src="./publico/imagenCajaReprocann.jpg" alt="legal">
                         <p class="medio__texto card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quaerat sint, accusamus, eaque quod perferendis qui odio placeat pariatur officia consequatur aliquam provident fugiat consectetur corrupti delectus similique, aliquid sunt?.</p>
                         <a class="btn  btn-lg btn-block btn-dark" href="paginas/reprocann.html" role="button">REPROCANN</a>
                     </div>
@@ -89,7 +91,7 @@
             <div class=" col-lg-4">
                 <div class="card text-center bg-transparent border-0">
                     <div class="card-body">
-                        <img class="medio__foto card-img-top" src="./publico/imagenCajaTienda.jpg" alt="compras">
+                        <img class="medio__foto card-img-top animate__animated animate__flipInX" src="./publico/imagenCajaCultivo.jpg" alt="compras">
                         <p class="medio__texto card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quaerat sint, accusamus, eaque quod perferendis qui odio placeat pariatur officia consequatur aliquam provident fugiat consectetur corrupti delectus similique, aliquid sunt?.</p>
                         <a class="btn  btn-lg btn-block btn-dark" href="paginas/tienda.html" role="button">Tienda</a>
                     </div>

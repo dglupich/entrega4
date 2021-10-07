@@ -4,11 +4,10 @@
 /*MIXIN*/
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(to right top, #303030, #484848, #626262, #7e7c7d, #9a9898, #acaaaa, #bebcbc, #d0cece, #dbdada, #e7e6e7, #f3f3f3, #ffffff); }
+  background-color: #2F5D62; }
 
 h1 {
   color: black;
-  margin: 150px 0 0 20px;
   font-size: 60px;
   font-family: 'roboto';
   font-weight: bold; }
@@ -42,7 +41,8 @@ p {
     padding-top: 20px; }
   .navbar__menu {
     text-align: center;
-    padding-right: 20px; }
+    padding-right: 20px;
+    font-size: 25px; }
     .navbar__menu__item {
       padding-right: 40px; }
 
@@ -53,24 +53,29 @@ p {
     padding: 15px; }
 
 /*PAGES*/
-.inicio {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 50px 30px 50px; }
-  .inicio__texto {
-    margin-top: 35px;
-    font-weight: lighter;
-    width: 60%;
-    text-align: justify;
-    font-size: 20px; }
-  .inicio__foto {
-    margin-top: 25px;
-    width: 300px;
-    height: 300px; }
+.principal {
+  padding: 100px 0px 0px 30px; }
+  .principal__texto {
+    animation-duration: 5s;
+    animation-name: comienzaTexto; }
+
+@keyframes comienzaTexto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .principal__foto {
+    animation-duration: 15s;
+    animation-name: comienzaFoto; }
+
+@keyframes comienzaFoto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .medio {
-  padding-top: 100px; }
+  padding-top: 200px; }
   .medio__foto {
     border-radius: 100%;
     width: 50%; }
