@@ -5,6 +5,7 @@
         animation-duration: 5s;
         animation-name: comienzaTexto;
     }
+    
     @keyframes comienzaTexto{
         0% {
             opacity: 0;
@@ -15,7 +16,8 @@
     }
 
     &__foto{
-        animation-duration: 15s;
+        padding-left: 20px;
+        animation-duration: 10s;
         animation-name: comienzaFoto;
     }
     @keyframes comienzaFoto{
@@ -28,36 +30,3 @@
     }
 }
    
-
- .medio{
-     padding-top: 200px;
-     &__foto{
-         @include formato(100%, 50%)
-     }
-     &__texto{
-        @include parrafo(30px, oblique)
-     }
- }
-
-@media only screen and (max-width: 1015px) {
-  
-    
-    .card{
-        width: 600px;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-   
-        .card{
-        width: 480px;
-        }   
-}
-
-@media only screen and (max-width: 560px) {
-   
-  
-    .card{
-        width: 380px;
-    }
-}
