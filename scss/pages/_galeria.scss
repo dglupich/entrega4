@@ -1,53 +1,12 @@
 
 
-.presentacion{
-    padding: 20px;
-
-    &__texto{
-        font-size: $parrafo-l;
-    }
+.galeria{
+    padding: $margen
 }
 
 .carousel{
-    padding: 7% 15%;
-    text-align: center;
+    padding: 0% 25%;
    
-    &__cuerpo__fotos{
-        @include medida(350px, 450px)
-    }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  
-    #carouselExampleControls{
-        width: 300px;
-    }
-
-    .carousel__cuerpo__fotos{
-        width: 500px;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-   
-    #carouselExampleControls{
-        width: 480px;
-        }
-
-    .carousel__cuerpo__fotos{
-        width: 280px;
-        }   
-}
-
-@media only screen and (max-width: 560px) {
-   
-    #carouselExampleControls{
-    width: 280px;
-    }
-  
-    .carousel__cuerpo__fotos{
-        width: 180px;
-    }
+    
 }
 

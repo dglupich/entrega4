@@ -1,48 +1,19 @@
 
-.inventario{
-    display: grid;
-    grid-template-areas: "head  head" "menu menu" "main foot";
-    margin-left: 20px;
+.vege{
+    padding:  $margen;
 
-    &__titulo{
-        padding-bottom: 100px;
-        grid-area: head;
+    &__fase{
+        padding-top: 50px;
     }
-    &__texto{
-        padding-bottom: 50px;
-        font-size: $parrafo-l;
-        grid-area: menu;
-    }
-    &__lista{
-        grid-area: main;
-        font-size: 20px;
-        font-weight: bolder;
-    }
-    &__foto:hover{
-        grid-area: foot;
-        transform: scale(1.5,1.5);
-    }
+
 }
 
-@media only screen and (max-width: 1024px) {
-  
+.flora{
+    padding: $margen;
+
+    &__fase{
+        padding-top: 50px;
+    }
+}
     
-    .inventario__foto{
-        width: 500px;
-    }
-}
 
-@media only screen and (max-width: 780px) {
-   
-        .inventario__foto{
-        width: 280px;
-        }   
-}
-
-@media only screen and (max-width: 560px) {
-   
-  
-    .inventario__foto{
-        width: 180px;
-    }
-}

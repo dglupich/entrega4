@@ -1,9 +1,17 @@
 
 
-.formulario{
-    margin-top: 40px;
+.contacto{
+    padding: $margen;
 
-    &__contacto{
+    &__formulario{
+        padding-top: $separador;
+
+        &__linea{
+            padding: 15px;
+        }
+    }
+
+    &__medios{
         margin-top: 30px;
 
         &__whatsapp{

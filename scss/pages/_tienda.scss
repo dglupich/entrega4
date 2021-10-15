@@ -1,18 +1,12 @@
 
 
 .tienda{
-    margin-left: 20px;
+    padding: $margen;
  
-
-    &__texto{
-        font-size: $parrafo-l;
-        margin-left: 20px;
-        padding: 50px 0 30px 0;
-    }
 }
 
 .gondola{
-    padding-top:  100px;
+   padding: $margen;
 
     &__foto{
         @include formato (100%, 50%)
@@ -23,3 +17,4 @@
         @include parrafo(30px, oblique)
     }
 }
+

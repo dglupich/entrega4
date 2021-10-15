@@ -1,28 +1,28 @@
 
+/*PAGINAS*/
+$margen:  100px 15px 20px 30px;
+$separador: 45px;
 
-/*COLORES*/
-$fondo: rgb(39, 39, 39);
-
-
-/*LETRAS*/
+/*TEXTOS*/
 $parrafo-s: 15px;   
 $parrafo-m: 20px;
 $parrafo-l: 25px;
 
-/*MIXIN*/
-@mixin medida ($ancho, $alto){
-    width: $ancho;
-    height: $alto;
-}
-
+ /*MIXIN IMAGENES*/
 @mixin formato ($borde, $diametro){
     border-radius: $borde;
     width: $diametro;
 }
+/*MIXIN TEXTOS*/
+@mixin estilo ($medida, $gama) {
+    font-size: $medida;
+    color: $gama
+}
 
-@mixin parrafo ($espacios, $letra) {
+@mixin parrafo ($espacios, $letra,) {
     padding: $espacios;
     font-style: $letra;
-    
-    
 }
+
+
+

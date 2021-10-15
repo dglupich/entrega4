@@ -1,56 +1,86 @@
 /*UTILS*/
-/*COLORES*/
-/*LETRAS*/
-/*MIXIN*/
+/*PAGINAS*/
+/*TEXTOS*/
+/*MIXIN IMAGENES*/
+/*MIXIN TEXTOS*/
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #2F5D62; }
 
 h1 {
-  color: black;
+  font-family: 'Ultra', serif;
   font-size: 60px;
-  font-family: 'roboto';
-  font-weight: bold; }
+  color: #f4bc85; }
 
 h2 {
-  color: black;
-  margin: 100px 0 50px 20px;
+  font-family: 'Ultra', serif;
   font-size: 45px;
-  font-family: 'roboto';
-  font-weight: bolder; }
+  color: wheat; }
 
 h3 {
-  font-family: 'roboto'; }
+  font-family: 'Ultra', serif;
+  font-size: 30px;
+  color: wheat; }
 
 h4 {
-  font-style: oblique;
-  color: white; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 35;
+  color: #f4bc85; }
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: wheat; }
 
 p {
-  color: black;
-  font-family: 'roboto';
-  font-weight: lighter; }
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: wheat; }
+
+@media (min-width: 576px) {
+  h1 {
+    width: 25%; } }
+
+@media (min-width: 768px) {
+  h1 {
+    width: 50%; } }
+
+@media (min-width: 1024px) {
+  h1 {
+    width: 100%; } }
 
 /*PARTIALS*/
 .navbar {
   padding: 10px; }
-  .navbar__logo {
-    border-radius: 100%;
-    width: 30%;
-    padding-left: 20px;
-    padding-top: 20px; }
   .navbar__menu {
     text-align: center;
     padding-right: 20px;
-    font-size: 25px; }
+    text-decoration: none; }
     .navbar__menu__item {
+      font-style: 'Ultra', serif;
       padding-right: 40px; }
+  .navbar .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #f8c07a; }
+
+@media (min-width: 576px) {
+  .navbar__logo {
+    width: 50%; } }
+
+@media (min-width: 768px) {
+  .navbar__logo {
+    width: 800%; } }
+
+@media (min-width: 1024px) {
+  .navbar__logo {
+    width: 100%; } }
 
 .fin {
   text-align: center;
   padding: 50px 0 30px 0; }
   .fin__redes {
-    padding: 15px; }
+    margin: 20px 30px 0 30px; }
 
 /*PAGES*/
 .principal {
@@ -65,7 +95,8 @@ p {
   100% {
     opacity: 1; } }
   .principal__foto {
-    animation-duration: 15s;
+    padding-left: 20px;
+    animation-duration: 10s;
     animation-name: comienzaFoto; }
 
 @keyframes comienzaFoto {
@@ -74,83 +105,40 @@ p {
   100% {
     opacity: 1; } }
 
+.vege {
+  padding: 100px 15px 20px 30px; }
+  .vege__fase {
+    padding-top: 50px; }
+
+.flora {
+  padding: 100px 15px 20px 30px; }
+  .flora__fase {
+    padding-top: 50px; }
+
+.instrucciones {
+  padding: 100px 15px 20px 30px; }
+  .instrucciones__archivos {
+    padding-top: 45px; }
+    .instrucciones__archivos__pdf {
+      color: #c77948;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px; }
+  .instrucciones__cuadro:hover {
+    transform: scale(1.4, 1.4); }
+
 .medio {
-  padding-top: 200px; }
+  padding: 100px 15px 20px 30px; }
+  .medio__tarjeta {
+    padding-top: 45px; }
   .medio__foto {
     border-radius: 100%;
     width: 50%; }
   .medio__texto {
-    padding: 30px;
+    padding: 10px;
     font-style: oblique; }
 
-@media only screen and (max-width: 1015px) {
-  .card {
-    width: 600px; } }
-
-@media only screen and (max-width: 780px) {
-  .card {
-    width: 480px; } }
-
-@media only screen and (max-width: 560px) {
-  .card {
-    width: 380px; } }
-
-.inventario {
-  display: grid;
-  grid-template-areas: "head  head" "menu menu" "main foot";
-  margin-left: 20px; }
-  .inventario__titulo {
-    padding-bottom: 100px;
-    grid-area: head; }
-  .inventario__texto {
-    padding-bottom: 50px;
-    font-size: 25px;
-    grid-area: menu; }
-  .inventario__lista {
-    grid-area: main;
-    font-size: 20px;
-    font-weight: bolder; }
-  .inventario__foto:hover {
-    grid-area: foot;
-    transform: scale(1.5, 1.5); }
-
-@media only screen and (max-width: 1024px) {
-  .inventario__foto {
-    width: 500px; } }
-
-@media only screen and (max-width: 780px) {
-  .inventario__foto {
-    width: 280px; } }
-
-@media only screen and (max-width: 560px) {
-  .inventario__foto {
-    width: 180px; } }
-
-.instrucciones {
-  display: grid;
-  margin-left: 20px; }
-  .instrucciones__titulo {
-    padding-bottom: 150px; }
-  .instrucciones__texto {
-    font-size: 25px; }
-  .instrucciones__video {
-    justify-self: center;
-    animation-duration: 8s;
-    animation-name: aparece; }
-
-@keyframes aparece {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  .instrucciones__archivos {
-    display: block;
-    color: green;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px; }
-
 @media only screen and (max-width: 1024px) {
   .instrucciones {
     width: 500px; } }
@@ -175,54 +163,30 @@ p {
   .medicos__lista {
     width: 180px; } }
 
-.presentacion {
-  padding: 20px; }
-  .presentacion__texto {
-    font-size: 25px; }
+.galeria {
+  padding: 100px 15px 20px 30px; }
 
 .carousel {
-  padding: 7% 15%;
-  text-align: center; }
-  .carousel__cuerpo__fotos {
-    width: 350px;
-    height: 450px; }
+  padding: 0% 25%; }
 
-@media only screen and (max-width: 1024px) {
-  #carouselExampleControls {
-    width: 300px; }
-  .carousel__cuerpo__fotos {
-    width: 500px; } }
-
-@media only screen and (max-width: 780px) {
-  #carouselExampleControls {
-    width: 480px; }
-  .carousel__cuerpo__fotos {
-    width: 280px; } }
-
-@media only screen and (max-width: 560px) {
-  #carouselExampleControls {
-    width: 280px; }
-  .carousel__cuerpo__fotos {
-    width: 180px; } }
-
-.formulario {
-  margin-top: 40px; }
-  .formulario__contacto {
+.contacto {
+  padding: 100px 15px 20px 30px; }
+  .contacto__formulario {
+    padding-top: 45px; }
+    .contacto__formulario__linea {
+      padding: 15px; }
+  .contacto__medios {
     margin-top: 30px; }
-    .formulario__contacto__whatsapp {
+    .contacto__medios__whatsapp {
       padding-left: 30px; }
-    .formulario__contacto__direccion {
+    .contacto__medios__direccion {
       padding-left: 30px; }
 
 .tienda {
-  margin-left: 20px; }
-  .tienda__texto {
-    font-size: 25px;
-    margin-left: 20px;
-    padding: 50px 0 30px 0; }
+  padding: 100px 15px 20px 30px; }
 
 .gondola {
-  padding-top: 100px; }
+  padding: 100px 15px 20px 30px; }
   .gondola__foto {
     border-radius: 100%;
     width: 50%; }
@@ -230,6 +194,5 @@ p {
     padding: 30px;
     font-style: oblique; }
 
-/*COLORES*/
-/*LETRAS*/
-/*MIXIN*/
+.mejorando__texto {
+  padding: 15px 0 30px 0; }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/xxx.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ultra&display=swap" rel="stylesheet">
     <meta name="description" content="Te mostramos un kit de inicio, que hacer durante todo el ciclo y geneticas faciles de cosechar">
     <meta name="keywords" content="CARPA DE CULTIVO, LUZ DE SODIO, PANEL LED, VENTILADOR, SEMILLAS RECOMENDADAS PARA PRINCIPIANTES">
     <title>Cultivo - Cultivo En Casa</title>
@@ -16,138 +16,185 @@
 <body>
     <!--NAVEGADOR-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="../index.html">  <img class="navbar__logo" src="../publico/logo.png" alt="logo pagina"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNav" aria-controls="barraNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-            <div class="navbar__menu collapse navbar-collapse" id="barraNav">
-                <ul class="navbar-nav ms-auto">
-                    
-                    <li class="navbar__menu__item navbar-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="navbar__menu__item  navbar-item">
-                        <a class="nav-link" href="cultivo.html">Cultivo</a>
-                    </li>
-                    <li class="navbar__menu__item  navbar-item">
-                        <a class="nav-link" href="reprocann.html">REPROCANN</a>
-                    </li>
-                    <li class="navbar__menu__item  navbar-item">
-                        <a class="nav-link" href="galeria.html">Galeria</a>
-                    </li>
-                    <li class="navbar__menu__item  navbar-item">
-                        <a class="nav-link" href="tienda.html">Tienda</a>
-                    </li>
-                    <li class="navbar__menu__item  navbar-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+      <nav class="navbar navbar-expand-lg animate__animated">
+          <a class="navbar-brand" href="../index.html">  <img class="navbar__logo" src="../publico/logo.png" alt="logo pagina"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNav" aria-controls="barraNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class=" navbar__menu collapse navbar-collapse" id="barraNav">
+              <ul class="navbar-nav ms-auto">
+
+                  <li class="navbar__menu__item navbar-item">
+                      <a class="nav-link" href="../index.html">Inicio    </a>
+                  </li>
+                  <li class="navbar__menu__item navbar-item">
+                      <a class="nav-link" href="cultivo.html">Cultivo</a>
+                  </li>
+                  <li class="navbar__menu__item navbar-item">
+                      <a class="nav-link" href="reprocann.html">REPROCANN</a>
+                  </li>
+                  <li class="navbar__menu__item navbar-item">
+                      <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="navbar__menu__item navbar-item">
+                      <a class="nav-link" href="tienda.html">Tienda</a>
+                   </li>
+                  <li class="navbar__menu__item navbar-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+
+               </ul>
+          </div>
+      </nav>
+  </header>
+
+
+    <!--PRIMER CAROUSEL-->
+    <section class="vege container-fluid">
+      <h1>Ciclo de vida</h1>
+      
+        <div class="vege__fase row d-flex">
+            
+            <div class="col-md-6">
+                <div class="carousel1">
+                    <div id="carouselCultivo1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="carouselCultivo1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../publico/germinado.jpg" class="carousel1__fotos d-block w-100" alt="Semilla">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Germinación</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/plantula.jpg" class="carousel1__fotos d-block w-100" alt="plantula">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Primera semana</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/plantin1.jpg" class="carousel1__fotos d-block w-100" alt="plantin">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Tercera semana</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/plantin2.jpg" class="carousel1__fotos d-block w-100" alt="plantin">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Cuarta semana</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/vegetativo1.jpg" class="carousel1__fotos d-block w-100" alt="planta">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Sexta semana</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/vegetativo2.jpg" class="carousel1__fotos d-block w-100" alt="plnata">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Octava semana</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCultivo1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCultivo1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
             </div>
-        </nav>
-    </header>
 
-    <!--PRIMERA PARTE-->
-    <div class="inventario">
-        <h1 class="inventario__titulo">Lo necesario para que lo puedas hacer!</h1>
-        <p class="inventario__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non risus orci. Pellentesque risus sem, cursus placerat sagittis id, accumsan eu metus. Vestibulum congue ex ac felis convallis facilisis.</p>
-        <ol class="inventario__lista">
-           <li>Armario</li>
-           <li>Bandeja</li>
-           <li>Luz sodio o led</li>
-           <li>Reflector (de ser necesario)</li>
-           <li>Poleas</li>
-           <li>Termohigrometro</li>
-           <li>Temporizador</li>
-           <li>Filtro de olor</li>
-           <li>Conducto de aire</li>
-           <li>Extractor</li>
-           <li>Intractor de aire</li>
-           <li>Ventilador</li>
-        </ol>
+            <div class="col-md-6">
+              <h2>Periodo vegetativo</h2>
+              <p>Esta etapa tiene lugar despuesde la germinacíon, empieza a auementar su tamaño y desarrollan las famosas hojas de abanico asi como toda su estructura. Puede durar entre 3 y 16 semanas dependendiendo de cada genetica. </p>
+          </div>
 
-        <img class="inventario__foto" src="../publico/diagramaInterior.jpg" alt="indoor comoleto">
-    </div>
+        </div>
+    </section>
 
+    <!--SEGUNDO CAROUSEL-->
+    <section class="flora container-fluid">
 
-    <!--SEGUNDA PARTE-->
-    <div class="titulogeneticas">
-        <h2>Geneticas recomendadas.</h2>
-    </div>
-    
-    <!--TABLA GENETICAS-->
-    <div class="geneticas d-flex p-5 bd-highlight table-responsive">
-            <table class="table table-hover table-bordered table-sm  bg-light" > 
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col">Nro</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Predominancia</th>
-                        <th scope="col">Stock</th>
-                    </tr>
-                </thead>
+        <div class="flora__fase row d-flex">
 
-            <tbody>
-                    <tr>
-                        <th scope="row">01</th>
-                        <td>Purple Punch</td>
-                        <td>90% Ind 10% Sat</td>
-                        <td>Si</td>
-                    </tr>
+          <div class="col-md-6">
+            <h2>Periodo vegetativo</h2>
+            <p>La etapa de floración de las plantas es el período en el que crecen sus cogollos. Después de algunas semanas de crecimiento vegetativo, las plantas de cannabis podrán florecer cuando cambie el fotoperíodo (cantidad de horas de luz)Tambien dependendiendo la genetica, esta etapa puede durar entre 8 y 12 semanas.</p>
+          </div>
 
-                    <tr>
-                        <th scope="row">02</th>
-                        <td>Northen Lights</td>
-                        <td>100% Ind</td>
-                        <td>Si</td>
-                    </tr>
+            <div class="col-md-6">
+                <div class="carousel2">
+                    <div id="carouselCultivo2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="carouselCultivo2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="carouselGaleria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../publico/preFlora.jpg" class="carousel2__fotos d-block w-100" alt="prelora">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Preflora (sexado)</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/floraInicio.jpg" class="carousel2__fotos d-block w-100" alt="inicio floración">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Principio de floración</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/floraInter.jpg" class="carousel2__fotos d-block w-100" alt="floracion media">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Floración intermedia</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../publico/floraFinal.jpg" class="carousel2__fotos d-block w-100" alt="floracion final">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Resultado final</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCultivo2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCultivo2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
 
-                    <tr>
-                        <th scope="row">03</th>
-                        <td>Cherry Wine CBD</td>
-                        <td>50% Ind 50% Sat</td>
-                        <td>Si</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">04</th>
-                        <td>White Widow</td>
-                        <td>65% Ind 35% Sat</td>
-                        <td>Si</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">05</th>
-                        <td>Orange Blossom</td>
-                        <td>30% Ind 70% Sat</td>
-                        <td>No</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">06</th>
-                        <td>Shining Silver Haze</td>
-                        <td>25% Ind 75% Sat</td>
-                        <td>Si</td>
-                    </tr>
-
-                </tbody>
-            </table>
-    </div>   
-
+    </section>
 
     <!--PIE-->
     <footer class="fin">
-        <h6>Derechos Reservados</h6>
-        <img class="fin__redes" src="../publico/linkedin.png" alt="red social linkedin">
-        <img class="fin__redes" src="../publico/instagram.png" alt="red social instagram">
-        <img class="fin__redes" src="../publico/twitter.png" alt="red social twitter">
-    </footer>
+      <h6>Derechos Reservados</h6>
+      <a href="https://twitter.com/"><img class="fin__redes" src="../publico/twitter.png" alt="red social twitter"></a>
+      <a href="https://www.linkedin.com/"><img class="fin__redes" src="../publico/linkedin.png" alt="red social linkedin"></a>
+      <a href="https://www.instagram.com/"><img class="fin__redes" src="../publico/instagram.png" alt="red social instagram"></a>
+  </footer>
 
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
 </body>
 </html>
-
-

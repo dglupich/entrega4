@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/xxx.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ultra&display=swap" rel="stylesheet">
     <meta name="description" content="Contactanos con un e-mail, whatsapp, llamanos o venir personalmente">
     <meta name="keywords" content="HORARIOS, TELEFONO, REDES SOCIALES, E-MAIL">
     <title>Contactanos - Cultivo En Casa</title>
@@ -15,45 +15,44 @@
 <body>
     <!--NAVEGADOR-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="../index.html">  <img class="navbar__logo" src="../publico/logo.png" alt=""> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNav" aria-controls="barraNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-lg animate__animated">
+            <a class="navbar-brand" href="../index.html">  <img class="navbar__logo" src="../publico/logo.png" alt="logo pagina"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNav" aria-controls="barraNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         
-            <div class="navbar__menu collapse navbar-collapse" id="barraNav">
+            <div class=" navbar__menu collapse navbar-collapse" id="barraNav">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="navbar__menu__item navbar-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio    </a>
                     </li>
-                    <li class="navbar__menu__item  navbar-item">
+                    <li class="navbar__menu__item navbar-item">
                         <a class="nav-link" href="cultivo.html">Cultivo</a>
                     </li>
-                    <li class="navbar__menu__item  navbar-item">
+                    <li class="navbar__menu__item navbar-item">
                         <a class="nav-link" href="reprocann.html">REPROCANN</a>
                     </li>
-                    <li class="navbar__menu__item  navbar-item">
+                    <li class="navbar__menu__item navbar-item">
                         <a class="nav-link" href="galeria.html">Galeria</a>
                     </li>
-                    <li class="navbar__menu__item  navbar-item">
+                    <li class="navbar__menu__item navbar-item">
                         <a class="nav-link" href="tienda.html">Tienda</a>
-                    </li>
-                    <li class="navbar__menu__item  navbar-item">
+                     </li>
+                    <li class="navbar__menu__item navbar-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
-                </ul>
+
+                 </ul>
             </div>
         </nav>
     </header>
 
     <!--FORMULARIO DE CONTACTO-->
-    
-    <h1>Contactanos.</h1>
-
-    <!--PRIMERA PARTE-->
-    <div class="container contact-form">
-        <form class="formulario" action="index.js" method="POST" enctype="application/x-www-form-urlencodedS">
-           <div class="row">
+    <div class="contacto container-fluid contact-form">
+        <h1>Contactanos</h1>
+        <form class="conta  cto__formulario" action="index.js" method="POST" enctype="application/x-www-form-urlencodedS">
+            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group p-2">
                         <input type="text" name="txtName" class="form-control" placeholder="Nombre y Apellido" value="" />
@@ -67,9 +66,9 @@
                     <div class="col-md-3 p-2">
                         <label for="inputInteres" class="form-label">Interes</label>
                         <select id="inputInteres" class="form-select">
-                          <option selected>Cultivo</option>
-                          <option selected>Compras</option>
-                          <option selected>Otros</option>
+                        <option selected>Cultivo</option>
+                        <option selected>Compras</option>
+                        <option selected>Otros</option>
                         </select>
                     </div>
                     <div class="form-group p-2">
@@ -81,23 +80,24 @@
                         <textarea name="txtMsg" class="form-control" placeholder="Your Message" style="width: 100%; height: 300px;"></textarea>
                     </div>
                 </div>
-
-                <div class="formulario__contacto">
-                    <iframe class="formualio__contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000.177261526667!2d-64.47424094880301!3d-31.169960156975275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1632421901231!5m2!1ses!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                    <img class="formulario__contacto__whatsapp" src="../publico/whatsapp.png" alt="whatsapp">  <strong> +54 1155996677</strong>
-
-                    <img class="formulario__contacto__direccion" src="../publico/direccion.png" alt="domicilio legal"> <strong>Calle Falsa 420</strong>
+    
+                <div class="contacto__medios">
+                    <iframe class="contacto__medios__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000.177261526667!2d-64.47424094880301!3d-31.169960156975275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1632421901231!5m2!1ses!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+                    <img class="contacto__medios__whatsapp" src="../publico/whatsapp.png" alt="whatsapp">  <strong> +54 1155996677</strong>
+    
+                    <img class="contacto_medios__direccion" src="../publico/direccion.png" alt="domicilio legal"> <strong>Calle Falsa 420</strong>
                 </div>
             </div>
         </form>
+    </div>  
 
     <!--PIE-->
     <footer class="fin">
         <h6>Derechos Reservados</h6>
-        <img class="fin__redes" src="../publico/linkedin.png" alt="red social linkedin">
-        <img class="fin__redes" src="../publico/instagram.png" alt="red social instagram">
-        <img class="fin__redes" src="../publico/twitter.png" alt="red social twitter">
+        <a href="https://twitter.com/"><img class="fin__redes" src="../publico/twitter.png" alt="red social twitter"></a>
+        <a href="https://www.linkedin.com/"><img class="fin__redes" src="../publico/linkedin.png" alt="red social linkedin"></a>
+        <a href="https://www.instagram.com/"><img class="fin__redes" src="../publico/instagram.png" alt="red social instagram"></a>
     </footer>
 
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
@@ -105,5 +105,7 @@
 
 </body>
 </html>
+
+
 
 

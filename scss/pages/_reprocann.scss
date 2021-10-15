@@ -1,40 +1,39 @@
 
-
 .instrucciones{
-    display: grid;
-    margin-left: 20px;
+    padding: $margen;
 
-    &__titulo{
-        padding-bottom: 150px;
-    }
 
-    &__texto{
-        font-size: $parrafo-l;
-    }
-    
-    &__video{
-        justify-self: center;
-        animation-duration: 8s;
-        animation-name: aparece;
-    }
-
-    @keyframes aparece{
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
-    }
 
     &__archivos{
-        display: block;
-        color: green;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 20px;
+        padding-top: $separador;
+        
+        &__pdf{
+            color: #c77948;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    }
+
+    &__cuadro:hover{
+        transform: scale(1.4,1.4);
+    }
+}
+
+
+.medio{ 
+    padding: $margen;
+
+    &__tarjeta{
+        padding-top: $separador
+    }
+
+    &__foto{
+        @include formato(100%, 50%)
+    }
+    &__texto{
+       @include parrafo(10px, oblique)
     }
 }
 
