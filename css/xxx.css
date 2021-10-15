@@ -62,7 +62,7 @@ p {
   .navbar .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    color: #f8c07a; }
+    color: #f8c07a !important; }
 
 @media (min-width: 576px) {
   .navbar__logo {

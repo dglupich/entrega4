@@ -15,7 +15,7 @@
 
     .nav-link{
         font-family: 'Montserrat', sans-serif;
-        @include estilo (20px, #f8c07a)
+        @include estilo (20px, #f8c07a!important);
     }
 }
 
