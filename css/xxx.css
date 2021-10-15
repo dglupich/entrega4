@@ -105,6 +105,18 @@ p {
   100% {
     opacity: 1; } }
 
+@media (min-width: 576px) {
+  .principal__foto {
+    width: 25%; } }
+
+@media (min-width: 768px) {
+  .principal__foto {
+    width: 50%; } }
+
+@media (min-width: 1024px) {
+  .principal__foto {
+    width: 100%; } }
+
 .vege {
   padding: 100px 15px 20px 30px; }
   .vege__fase {

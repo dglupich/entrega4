@@ -30,3 +30,25 @@
     }
 }
    
+@media (min-width: 576px) {
+
+    .principal__foto{
+        width: 25%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    .principal__foto{
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    
+    .principal__foto{
+        width: 100%;
+    }
+}
